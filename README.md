@@ -3,6 +3,6 @@ A Photo Editor Project In which you can edit the image perform crop  & filter op
 
 ## Features
 - Select Image or Capture Image
-- Crop
-- Filter
-- Save
+- Crop Image using multiple ratio
+- Filter Image has options - Brightness, Contrast, Saturation
+- Save Image in Device.
