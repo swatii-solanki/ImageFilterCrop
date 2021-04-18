@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/ivSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/grey_bg"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_change_camera"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/grey_bg"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_flash_on"
+            app:tint="@color/white" />
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ivCapture"
+            android:layout_below="@id/ivSwitch" />
+
+        <ImageView
+            android:id="@+id/ivCapture"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:src="@drawable/white_border_bg" />
+
+    </RelativeLayout>
+</layout>

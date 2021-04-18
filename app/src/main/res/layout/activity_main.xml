@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChooseGallery"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="284dp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:fontFamily="@font/lato_bold"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/choose_gallery"
+            android:textAllCaps="false"
+            android:textColor="@color/purple"
+            app:cornerRadius="@dimen/_6sdp"
+            app:icon="@drawable/ic_folder"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/_10sdp"
+            app:iconTint="@color/purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/purple"
+            app:strokeWidth="@dimen/_1sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCaptureImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/lato_bold"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/capture_image"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/_6sdp"
+            app:icon="@drawable/ic_camera"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnChooseGallery" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

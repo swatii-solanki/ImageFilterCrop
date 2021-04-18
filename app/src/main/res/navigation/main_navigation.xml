@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/editPhotoFragment">
+
+    <fragment
+        android:id="@+id/editPhotoFragment"
+        android:name="com.machinetask.ui.fragment.EditPhotoFragment"
+        android:label="EditPhotoFragment">
+
+        <action
+            android:id="@+id/action_editPhotoFragment_to_cropFragment"
+            app:destination="@id/cropFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/cropFragment"
+        android:name="com.machinetask.ui.fragment.CropFragment"
+        android:label="CropFragment">
+        <action
+            android:id="@+id/action_cropFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.machinetask.ui.fragment.FilterFragment"
+        android:label="FilterFragment">
+        <action
+            android:id="@+id/action_filterFragment_to_saveImageFragment"
+            app:destination="@id/saveImageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/saveImageFragment"
+        android:name="com.machinetask.ui.fragment.SaveImageFragment"
+        android:label="SaveImageFragment">
+        <action
+            android:id="@+id/action_saveImageFragment_to_viewEdgeFragment"
+            app:destination="@id/viewEdgeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewEdgeFragment"
+        android:name="com.machinetask.ui.fragment.ViewEdgeFragment"
+        android:label="ViewEdgeFragment" />
+</navigation>
