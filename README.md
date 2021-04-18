@@ -8,3 +8,10 @@ A Photo Editor Project In which you can edit the image perform crop  & filter op
 - Changing the Brightness, Contrast and Saturation of images.
 - Save Photo after editing.
 
+## Benefits
+- Easy Image Editing
+
+## Credits
+| Name | Library |
+| :-----: | :-: |
+| Yalantis | https://github.com/Yalantis/uCrop |
